@@ -1,3 +1,3 @@
 # ruby-data-project
 
-IPL data munging in ruby
+Project for IPL data munging in ruby
