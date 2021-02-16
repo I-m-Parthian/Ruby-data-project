@@ -1,11 +1,9 @@
-source "https://rubygems.org"
+# frozen_string_literal: true
 
-#git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
+source 'https://rubygems.org'
 
-ruby "~> 2.7.2"
-
-# gem "rails"
+ruby '~> 2.7.2'
 gem 'rubocop', '~> 1.9', require: false
 
+gem 'csv', '~> 3.1'
 gem 'gruff'
-gem "csv", "~> 3.1"

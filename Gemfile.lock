@@ -32,7 +32,7 @@ PLATFORMS
   x86_64-darwin-20
 
 DEPENDENCIES
-  csv
+  csv (~> 3.1)
   gruff
   rubocop (~> 1.9)
 
