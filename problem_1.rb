@@ -3,7 +3,7 @@
 require 'csv'
 require 'gruff'
 
-# Create a table out of given fil
+# Create a table out of given file
 table_of_teams = CSV.parse(File.read('dataset/deliveries.csv'), headers: true)
 hash_of_teams = Hash.new(0)
 
@@ -25,7 +25,7 @@ array_of_runs = []
 hash_of_teams.each do |_key, value|
   array_of_runs.push(value)
 end
-# pp array_of_runs
+
 graph.data('', array_of_runs)
 
 # hard code the labels
@@ -45,4 +45,4 @@ graph.labels = {
   12 => 'RPS'
 }
 
-graph.write('teamScores.png')
+graph.write('results/problem_1_results.png')
