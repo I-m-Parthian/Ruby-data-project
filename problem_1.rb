@@ -12,9 +12,9 @@ table_of_teams.each do |table_row|
   hash_of_teams[table_row['batting_team']] += table_row['total_runs'].to_i
 end
 
-# Resolve redundancy in SuperGiants runs
-hash_of_teams['Rising Pune Supergiants'] += hash_of_teams['Rising Pune Supergiant']
-hash_of_teams.delete('Rising Pune Supergiant')
+# # Resolve redundancy in SuperGiants runs
+# hash_of_teams['Rising Pune Supergiants'] += hash_of_teams['Rising Pune Supergiant']
+# hash_of_teams.delete('Rising Pune Supergiant')
 
 # plot graph from the above data
 graph = Gruff::Bar.new
